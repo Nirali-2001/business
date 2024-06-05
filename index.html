@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- start bootstrap css   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- End  bootstrap css -->
+  <style>
+    .carousel img{
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start navbar -->
+  <nav class="bg-white-800 ">
+    <div class="me-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-evenly">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+           
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+           
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-white-900 text-orange-600 rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page"><span class="text-yellow-400">Waso</span> Strategy</a>
+              <a href="#"
+                class="text-orange-600 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><span
+                  class="text-orange-400">01</span>HOME</a>
+              <a href="#"
+                class="text-gray-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><span
+                  class="text-orange-400">02</span>ABOUT</a>
+              <a href="#"
+                class="text-gray-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><span
+                  class="text-orange-400">03</span>SERVICES</a>
+              <a href="#"
+                class="text-gray-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><span
+                  class="text-orange-400 ">04</span>PROJECTS</a>
+              <a href="#"
+                class="text-gray-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><span
+                  class="text-orange-400">05</span>CONTACT</a>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+          aria-current="page">Waso Strategy</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">HOME</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">ABOUT</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">SERVICE</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">PROJECTS</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  <!-- End navbar  -->
+
+  
+  <!-- Start Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide fixed-img " data-bs-ride="carousel">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h6>INTRODUCING WASO STRATEGY <span class="text-yellow-400">01/05</span></h6>
+          <h1 class="text-5xl font-serif font-medium">Explore <span class="text-yellow-400">new ideas</span> for <br>your business</h1>
+          <button class=" bg-red-500 rounded-2xl px-6 py-1">Get Started</button>
+          <!-- <img class="" src="./slide/play-button.png" alt=""> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h6>INTRODUCING WASO STRATEGY <span class="text-yellow-400">01/05</span></h6>
+          <h1 class="text-5xl font-serif font-bold">Explore <span class="text-yellow-400">new ideas</span> for <br>your business</h1>
+          <button class=" bg-red-500 rounded-2xl px-6 py-1">Get Started</button>
+          <!-- <img src="./slide/play-button.png" alt=""> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./slide/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h6>INTRODUCING WASO STRATEGY <span class=" text-yellow-400">01/05</span></h6>
+          <h1 class="text-5xl font-serif font-bold">Explore <span class="text-yellow-400">new ideas</span> for <br>your business</h1>
+          <button class=" bg-red-500 rounded-2xl px-6 py-1  ">Get Started</button>
+          <!-- <img src="./slide/play-button.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End Carousel -->
+  <div class="main_card my-10">
+    <p class="text-gray-500 text-center">PROJECTS <span class="text-yellow-400">04/05</span></p>
+    <h1 class="font-bold text-3xl text-center">Brand's we've crafted so far </h1>
+  </div>
+  <!-- First Card  -->  
+  <div class="flex gap-2  ">
+  <div class="card bg-dark text-white">
+    <img src="./projects/pj-gal-szabo-CIXXIWxxec4-unsplash.jpg" class="card-img rounded-2xl " alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title text-4xl font-bold">MCL Group</h1>
+      <h4 class="card-text text-yellow-400">BUSINESS</h4>
+   </div>
+  </div>
+  <!-- Second Card  -->
+  <div class="card bg-dark text-white">
+    <img src="./projects/team-fredi-FN3vmVee2sI-unsplash.jpg" class="card-img rounded-2xl" alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title text-4xl font-bold">Fredi</h1>
+      <h4 class="card-text text-yellow-400">STRATEGY PLANNING</h4>
+      </div>
+  </div>
+  <!-- Third Card  -->
+  <div class="card bg-dark text-white">
+    <img src="./projects/vmsign-x9yGe7wnvKQ-unsplash.jpg" class="card-img rounded-2xl" alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title text-4xl fond-bold">Banana</h1>
+      <h4 class="card-text text-yellow-400">VIDEO CONTENT</h4>
+     </div>
+  </div>
+</div>
+
+  <!-- End Card  -->
+
+
+  <!-- Start bootstrap js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- End bootstrap js -->
+</body>
+
+</html>
